@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}Job Search{% endblock %}
+{% block content %}
+<div class="jumbotron">
+    <div class="container">
+
+<section><!--BEGAIN CONTENT SECTION-->
+    <h1>Job Search</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+    <!--BEGAIN FORM -->
+
+
+    <form action="/application" method="POST">
+        <label><!--first name-->
+        First Name:<input type="text"  name="firstname" placeholder="first name">
+        </label>
+        <br>
+        <label id="blastname"><!--last name-->
+        Last Name:<input type="text" name="lastname" placeholder="last name">
+        </label>
+        <br>
+        <label><!--salary-->
+        Salary:<input type="text" name="salary">
+        </label><!--end salary label-->
+        <br>
+        <label><!-- Begain job label-->
+        Job:<select name="jobs"><!--begain dropdown-->
+            <option name="softwareengineer">Software Engineer</option>
+            <option name="qaengineer">QA Engineer</option>
+            <option name="productmanager">Product Manager</option>
+        </select><!--end dropdown-->
+        </lable><!--end job lable-->
+        <br>
+        <!--submit button-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+    </form>
+
+    <!--END FORM-->
+
+    </section><!--END CONTENT SECTION-->
+</div>
+</div>
+
+{% endblock %}
+
